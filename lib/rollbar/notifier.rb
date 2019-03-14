@@ -204,7 +204,7 @@ module Rollbar
         send_item(item)
       end
     rescue => e
-      log_error("[Rollbar] Error processing the item: #{e.class}, #{e.message}. Item: #{item.payload.inspect}")
+      log_error("[Rollbar] Error processing the item: #{e.class}, #{e.message}.")
       raise e
     end
 
